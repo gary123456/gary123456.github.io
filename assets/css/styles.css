@@ -74,4 +74,6 @@ body {
 /* home page */
 #hero{
     background-image: url("assets/img/imgHomePage.jpg");
+    height: 90vh;
+    width: 100%;
 }
