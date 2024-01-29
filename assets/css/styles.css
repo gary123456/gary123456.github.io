@@ -78,7 +78,7 @@ body {
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
-    background-color: #088178;
+    background-color: #E3E6F3;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -99,6 +99,6 @@ body {
 #hero button {
     background-image: url("/assets/img/shopnow2.png");
     background-color: transparent;
-    color: #E3E6F3;
+    color: #088178;
     border: 0;
 }
