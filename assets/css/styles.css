@@ -76,5 +76,6 @@ body {
     background-image: url("assets/img/imgHomePage.jpg");
     height: 90vh;
     width: 100%;
+    background-size: cover;
     background-position: top 25% right 0;
 }
