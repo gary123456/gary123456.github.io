@@ -73,7 +73,7 @@ body {
 
 /* home page */
 #hero{
-    background-image: url("assets/img/imgHomePage.jpg");
+    background-image: url("/assets/img/imgHomePage.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -94,6 +94,6 @@ body {
 }
 
 #hero button {
-    background-image: url("");
+    background-image: url("/assets/img/shopnow1.png");
     background-color: transparent;
 }
