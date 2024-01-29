@@ -6,3 +6,8 @@
 body {
     font-family: "Sofia", sans-serif;
 }
+
+#logoheader img.logo{
+    max-width: 100px; /* ajustez la largeur maximale selon vos besoins */
+    height: auto; /* cela permettra à l'image de conserver son rapport hauteur/largeur */
+}
