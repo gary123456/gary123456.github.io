@@ -69,3 +69,9 @@ body {
     left: 20px;
 
 }
+
+
+/* home page */
+#hero{
+    background-image: url("/img/imgHomePage.jpg");
+}
