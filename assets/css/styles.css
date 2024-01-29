@@ -73,5 +73,5 @@ body {
 
 /* home page */
 #hero{
-    background-image: url("/img/imgHomePage.jpg");
+    background-image: url("assets/img/imgHomePage.jpg");
 }
