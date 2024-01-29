@@ -57,7 +57,9 @@ body {
     color: #088178;
 }
 
-#navbar li a.active::after{
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
     content: "";
     width: 30%;
     height: 2px;
