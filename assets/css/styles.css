@@ -130,7 +130,6 @@ body {
 
 
 #logo-p img.imglogop{
-    max-width: 150px; /* ajustez la largeur maximale selon vos besoins */
+    max-width: 100px; /* ajustez la largeur maximale selon vos besoins */
     height: auto; /* cela permettra à l'image de conserver son rapport hauteur/largeur */
-
 }
