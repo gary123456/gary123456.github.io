@@ -52,6 +52,7 @@
                 messageElement.textContent = 'Connexion réussie!';
                 messageElement.className = 'alert alert-success';
                 // Redirection ou mise à jour de l'interface utilisateur ici
+                window.location.href = '/home.html'; 
             } else {
                 messageElement.textContent = data.message || 'Erreur lors de la connexion.';
                 messageElement.className = 'alert alert-danger';
