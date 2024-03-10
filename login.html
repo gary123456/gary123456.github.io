@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="mt-5">Connexion</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Saisir l'adresse email" required>
+                    <div class="invalid-feedback">
+                        Veuillez entrer une adresse email valide.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de Passe</label>
+                    <input type="password" class="form-control" id="password" placeholder="Mot de Passe" required>
+                </div>
+                <button type="submit" class="btn btn-primary">S'authentifier</button>
+            </form>
+            <div id="loginError" class="alert alert-danger mt-3" style="display: none;">
+                Vérifiez l'adresse email ou le mot de passe.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#loginForm').on('submit', function(e) {
+        e.preventDefault();
+        // Ici, ajoutez le code pour envoyer une requête au serveur/backend pour vérifier l'authentification
+        // Par exemple, utiliser fetch() ou jQuery.ajax() pour envoyer les données à votre serveur
+        // Puis traiter la réponse du serveur pour rediriger ou afficher un message d'erreur
+    });
+
+    $('#email').on('blur', function() {
+        if(!this.checkValidity()) {
+            $(this).addClass('is-invalid');
+        } else {
+            $(this).removeClass('is-invalid');
+        }
+    });
+});
+</script>
+</body>
+</html>
