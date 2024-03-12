@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (min-width: 1025px) {
+            .h-custom {
+                height: 100vh !important;
+            }
+        }
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+            font-size: 1rem;
+            line-height: 2.15;
+            padding-left: .75em;
+            padding-right: .75em;
+        }
+        .card-registration .select-arrow {
+            top: 13px;
+        }
+        .gradient-custom-2 {
+            background: #a1c4fd;
+            background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+            background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+        }
+        .bg-indigo {
+            background-color: #4835d4;
+        }
+        @media (min-width: 992px) {
+            .card-registration-2 .bg-indigo {
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+        @media (max-width: 991px) {
+            .card-registration-2 .bg-indigo {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="h-100 h-custom gradient-custom-2">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: #4835d4;">Informations Personnelles</h3>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                    <label class="form-label" for="firstName">Prénom</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="lastName" class="form-control form-control-lg" />
+                    <label class="form-label" for="lastName">Nom</label>
+                  </div>
+
+                  <div class="mb-4">
+                    <select class="select form-control-lg">
+                      <option value="">Sexe</option>
+                      <option value="Homme">Homme</option>
+                      <option value="Femme">Femme</option>
+                    </select>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="date" id="birthDate" class="form-control form-control-lg" />
+                    <label class="form-label" for="birthDate">Date de naissance</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Mot de passe</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6 bg-indigo text-white">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5">Détails Physiques</h3>
+
+                  <div class="form-outline form-white mb-4">
+                    <input type="text" id="height" class="form-control form-control-lg" />
+                    <label class="form-label" for="height">Taille (cm)</label>
+                  </div>
+
+                  <div class="form-outline form-white mb-4">
+                    <input type="text" id="weight" class="form-control form-control-lg" />
+                    <label class="form-label" for="weight">Poids (kg)</label>
+                  </div>
+
+                  <div class="mb-4">
+                    <select class="select form-control-lg text-dark">
+                      <option value="">Niveau d'activité physique</option>
+                      <option value="sedentaire">Sédentaire</option>
+                      <option value="legerement_actif">Légèrement actif</option>
+                      <option value="actif">Actif</option>
+                      <option value="tres_actif">Très actif</option>
+                      <option value="extremement_actif">Extrêmement actif</option>
+                    </select>
+                  </div>
+
+                  <div class="form-outline form-white mb-4">
+                    <input type="text" id="bodyFatIndex" class="form-control form-control-lg" placeholder="Si vous le connaissez, sinon laissez vide" />
+                    <label class="form-label" for="bodyFatIndex">Indice de masse grasse (%)</label>
+                  </div>
+
+                  <div class="mb-4">
+                    <select class="select form-control-lg text-dark">
+                      <option value="">Objectif</option>
+                      <option value="perte_de_poids_lente">Perte de poids lente</option>
+                      <option value="perte_de_poids_rapide">Perte de poids rapide</option>
+                      <option value="stabilisation">Stabilisation</option>
+                      <option value="prise_de_masse">Prise de masse</option>
+                    </select>
+                  </div>
+
+                  <button type="button" class="btn btn-light btn-lg" data-mdb-ripple-color="dark">S'inscrire</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
