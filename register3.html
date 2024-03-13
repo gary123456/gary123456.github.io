@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="registerCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom">
+                <label for="sexe">Sexe:</label>
+                <select class="form-control" id="sexe">
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+                <label for="birthday">Date de naissance:</label>
+                <input type="date" class="form-control" id="birthday">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="form-group">
+                <label for="taille">Taille (cm):</label>
+                <input type="number" class="form-control" id="taille">
+                <label for="poids">Poids (kg):</label>
+                <input type="number" class="form-control" id="poids">
+                <label for="nap">Niveau d'activité physique:</label>
+                <select class="form-control" id="nap">
+                    <option value="sedentaire">Sédentaire</option>
+                    <option value="actif">Actif</option>
+                    <option value="tres_actif">Très actif</option>
+                </select>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+                <label for="confirmEmail">Confirmez l'email:</label>
+                <input type="email" class="form-control" id="confirmEmail">
+                <label for="password">Mot de passe:</label>
+                <input type="password" class="form-control" id="password">
+                <button class="btn btn-primary mt-3" id="registerBtn">S'inscrire</button>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#registerCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#registerCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+    </a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    
+
+    
+</script>
+</body>
+</html>
