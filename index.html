@@ -22,19 +22,15 @@
     // Sélectionnez l'élément du bouton d'entrée
     const enterButton = document.getElementById('enter-button');
 
-    // Fonction pour ajouter et supprimer la classe d'animation toutes les 3 secondes
-    function toggleAnimation() {
-        enterButton.classList.add('animate__heartBeat'); // Ajoute la classe d'animation
-        setTimeout(() => {
-            enterButton.classList.remove('animate__heartBeat'); // Supprime la classe d'animation après 1 seconde
-        }, 1000);
-    }
+    // Ajoutez un gestionnaire d'événements pour le survol de la souris
+    enterButton.addEventListener('mouseenter', () => {
+        enterButton.classList.remove('animate__heartBeat'); // Supprimez l'animation au survol
+    });
 
-    // Démarrez l'animation initiale
-    toggleAnimation();
-
-    // Définissez l'intervalle pour répéter l'animation toutes les 3 secondes
-    setInterval(toggleAnimation, 3000);
+    // Ajoutez un gestionnaire d'événements pour la sortie du survol de la souris
+    enterButton.addEventListener('mouseleave', () => {
+        enterButton.classList.add('animate__heartBeat'); // Ajoutez l'animation lorsqu'on ne survole plus
+    });
 </script>
 
 </body>
