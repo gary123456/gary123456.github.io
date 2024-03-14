@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="welcome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
 
 <div class="container">
     <div class="content animate__animated animate__zoomInDown">
         <img src="img/Original.png" alt="Image d'arrière-plan">
-        <a href="acceuil.html" class="enter-button">
+        <a href="acceuil.html" class="enter-button animate__animated" id="enter-button">
             <img src="img/welcome.png" alt="Bouton d'entrée">
         </a>
     </div>
 </div>
+
+<script>
+    // Sélectionnez l'élément du bouton d'entrée
+    const enterButton = document.getElementById('enter-button');
+
+    // Fonction pour ajouter et supprimer la classe d'animation toutes les 3 secondes
+    function toggleAnimation() {
+        enterButton.classList.add('animate__heartBeat'); // Ajoute la classe d'animation
+        setTimeout(() => {
+            enterButton.classList.remove('animate__heartBeat'); // Supprime la classe d'animation après 1 seconde
+        }, 1000);
+    }
+
+    // Démarrez l'animation initiale
+    toggleAnimation();
+
+    // Définissez l'intervalle pour répéter l'animation toutes les 3 secondes
+    setInterval(toggleAnimation, 3000);
+</script>
 
 </body>
 </html>
