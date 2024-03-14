@@ -24,13 +24,18 @@
 
     // Ajoutez un gestionnaire d'événements pour le survol de la souris
     enterButton.addEventListener('mouseenter', () => {
-        enterButton.classList.remove('animate__heartBeat'); // Supprimez l'animation au survol
+        enterButton.classList.add('animate__heartBeat'); // Ajoutez l'animation au survol
     });
 
     // Ajoutez un gestionnaire d'événements pour la sortie du survol de la souris
     enterButton.addEventListener('mouseleave', () => {
-        enterButton.classList.add('animate__heartBeat'); // Ajoutez l'animation lorsqu'on ne survole plus
+        enterButton.classList.remove('animate__heartBeat'); // Supprimez l'animation lorsqu'on ne survole plus
     });
+
+    // Définissez l'intervalle pour répéter l'animation toutes les 2 secondes
+    setInterval(() => {
+        enterButton.classList.toggle('animate__heartBeat'); // Inversez l'état de l'animation
+    }, 2000); // Répétez l'animation toutes les 2 secondes
 </script>
 
 </body>
