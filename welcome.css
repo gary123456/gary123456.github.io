@@ -20,20 +20,17 @@ img {
 
 .enter-button {
     position: absolute;
-    top: 80%;
+    top: calc(80% - 256px); /* 80% moins la moitié de la hauteur du bouton */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .enter-button:hover {
-    background-color: #000;
-    color: #fff;
+    transform: translate(-50%, -50%) scale(1.1); /* Augmenter légèrement la taille au survol */
+}
+
+.enter-button img {
+    width: 256px; /* Largeur souhaitée du bouton */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
 }
