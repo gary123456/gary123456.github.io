@@ -14,14 +14,14 @@ body, html {
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover; /* L'image remplit complètement le conteneur en conservant les proportions */
 }
 
 .enter-button {
     position: absolute;
-    top: calc(80% - 128px); /* 80% moins la moitié de la hauteur du bouton */
+    top: calc(60% - 128px); /* 80% moins la moitié de la hauteur du bouton */
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.3s ease;
