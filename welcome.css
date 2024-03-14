@@ -21,7 +21,7 @@ img {
 
 .enter-button {
     position: absolute;
-    top: calc(80% - 256px); /* 80% moins la moitié de la hauteur du bouton */
+    top: calc(80% - 128px); /* 80% moins la moitié de la hauteur du bouton */
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.3s ease;
