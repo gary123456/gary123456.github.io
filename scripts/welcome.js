@@ -18,6 +18,6 @@ const enterButton = document.getElementById('enter-button');
             container.classList.add('animate__animated', 'animate__fadeOut'); // Ajoute l'animation de changement de page sur le conteneur
             setTimeout(() => {
                 window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
-            }, 3000); // Attends 2 secondes avant de rediriger
-        }, 3500); // Attends 2.5 secondes avant de lancer l'animation sur le conteneur
+            }, 8000); // Attends 2 secondes avant de rediriger
+        }, 8500); // Attends 2.5 secondes avant de lancer l'animation sur le conteneur
     });
