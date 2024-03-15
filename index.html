@@ -49,10 +49,10 @@
 
     // Fonction pour l'animation de changement de page au clic
     enterButton.addEventListener('click', () => {
-        container.classList.add('animate__animated', 'animate__bounceOut'); // Ajoute l'animation de changement de page
+        enterButton.classList.add('animate__animated', 'animate__bounceOut'); // Ajoute l'animation de changement de page
         setTimeout(() => {
             window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
-        }, 2000); // Attends 2 secondes avant de rediriger
+        }, 2500); // Attends 2 secondes avant de rediriger
     });
 </script>
 
