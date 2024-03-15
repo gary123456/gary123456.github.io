@@ -21,13 +21,28 @@ img {
 
 .enter-button {
     position: absolute;
-    top: 59%; /* Position verticale initiale au centre */
-    left: calc(52% - 128px); /* Position horizontale initiale au centre */
+    top: 50%; /* Position verticale initiale au centre */
+    left: 50%; /* Position horizontale initiale au centre */
+    transform: translate(-50%, -50%);
     cursor: pointer; /* Curseur de souris au survol */
     transition: all 0.3s ease-in-out; /* Transition fluide pour l'effet de survol */
 }
 
 .enter-button img {
-    width: 220px; /* Largeur souhaitée du bouton */
+    width: 20vw; /* Largeur souhaitée du bouton en fonction de la largeur de l'écran */
     height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+/* Media Query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .enter-button img {
+        width: 30vw; /* Ajuster la largeur du bouton pour les écrans de taille moyenne */
+    }
+}
+
+/* Media Query pour les écrans de petite taille */
+@media screen and (max-width: 576px) {
+    .enter-button img {
+        width: 40vw; /* Ajuster la largeur du bouton pour les écrans de petite taille */
+    }
 }
