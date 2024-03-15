@@ -21,8 +21,8 @@ img {
 
 .enter-button {
     position: absolute;
-    top: 40%; /* Position verticale initiale au centre */
-    left: calc(60% - 128px); /* Position horizontale initiale au centre */
+    top: 55%; /* Position verticale initiale au centre */
+    left: calc(57% - 128px); /* Position horizontale initiale au centre */
     cursor: pointer; /* Curseur de souris au survol */
     transition: all 0.3s ease-in-out; /* Transition fluide pour l'effet de survol */
 }
