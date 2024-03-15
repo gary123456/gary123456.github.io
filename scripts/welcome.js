@@ -12,14 +12,14 @@ const enterButton = document.getElementById('enter-button');
     });
 
     // Fonction pour l'animation de changement de page au clic sur le bouton
-enterButton.addEventListener('click', () => {
-    // Ajoute l'animation de changement de page au bouton
-    enterButton.classList.add('animate__animated', 'animate__bounceOut');
+    enterButton.addEventListener('click', () => {
+        // Ajoute l'animation de changement de page au bouton
+        enterButton.classList.add('animate__animated', 'animate__bounceOut');
 
-    // Attend un court délai avant de lancer l'animation sur le conteneur
-    setTimeout(() => {
-        // Ajoute l'animation de changement de page sur le conteneur
-        container.classList.add('animate__animated', 'animate__fadeOut');
+        // Attend un court délai avant de lancer l'animation sur le conteneur
+        setTimeout(() => {
+            // Ajoute l'animation de changement de page sur le conteneur
+            container.classList.add('animate__animated', 'animate__fadeOut');
     }, 1000); // Attends 1 seconde avant de lancer l'animation sur le conteneur
 
     // Redirige vers la page d'accueil après la fin de l'animation sur le conteneur
