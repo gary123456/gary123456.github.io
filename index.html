@@ -10,32 +10,35 @@
 <body>
 
 <div class="container">
-    <div class="content animate__animated animate__zoomInDown">
+    <div class="content">
        <img src="img/Original.png" alt="Image d'arrière-plan">
-        <a href="acceuil.html" class="enter-button animate__animated" id="enter-button">
+        <a href="acceuil.html" class="enter-button" id="enter-button">
             <img src="img/welcome.png" alt="Bouton d'entrée">
         </a>
     </div>
 </div>
 
 <script>
-    // Sélectionnez l'élément du bouton d'entrée
     const enterButton = document.getElementById('enter-button');
+    const container = document.querySelector('.container');
 
-    // Ajoutez un gestionnaire d'événements pour le survol de la souris
+    // Fonction pour l'animation au survol du bouton
     enterButton.addEventListener('mouseenter', () => {
-        enterButton.classList.add('animate__bounceOut'); // Ajoutez l'animation au survol
+        enterButton.style.transform = 'scale(1.1)'; // Augmente légèrement la taille au survol
     });
 
-    // Ajoutez un gestionnaire d'événements pour la sortie du survol de la souris
+    // Fonction pour la taille normale lorsque le survol se termine
     enterButton.addEventListener('mouseleave', () => {
-        enterButton.classList.remove('animate__bounceOut'); // Supprimez l'animation lorsqu'on ne survole plus
+        enterButton.style.transform = 'scale(1)'; // Redevient à la taille normale
     });
 
-    // Définissez l'intervalle pour répéter l'animation toutes les 2 secondes
-   /* setInterval(() => {
-        enterButton.classList.toggle('animate__bounceOut'); // Inversez l'état de l'animation
-    }, 2000); // Répétez l'animation toutes les 2 secondes */
+    // Fonction pour l'animation de changement de page au clic
+    enterButton.addEventListener('click', () => {
+        container.classList.add('animate__animated', 'animate__bounceOut'); // Ajoute l'animation de changement de page
+        setTimeout(() => {
+            window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
+        }, 2000); // Attends 2 secondes avant de rediriger
+    });
 </script>
 
 </body>
