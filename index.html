@@ -32,49 +32,17 @@
         enterButton.style.transform = 'scale(1)'; // Redevient à la taille normale
     });
 
-    
-
-    // Fonction pour l'animation au survol du bouton
-    enterButton.addEventListener('mouseenter', () => {
-       enterButton.classList.add('animate__animated', 'animate__shakeX');
-    });
-
-    // Fonction pour l'animation au survol du bouton
-    enterButton.addEventListener('mouseleave', () => {
-       enterButton.classList.remove('animate__animated', 'animate__shakeX');
-    });
-
-
-/*
-
-    // Fonction pour l'animation de changement de page au clic
+    // Fonction pour l'animation de changement de page au clic sur le bouton
     enterButton.addEventListener('click', () => {
         enterButton.classList.add('animate__animated', 'animate__bounceOut'); // Ajoute l'animation de changement de page
         setTimeout(() => {
-            window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
-        }, 2500); // Attends 2 secondes avant de rediriger
+            container.classList.add('animate__animated', 'animate__fadeOut'); // Ajoute l'animation de changement de page sur le conteneur
+            setTimeout(() => {
+                window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
+            }, 2000); // Attends 2 secondes avant de rediriger
+        }, 2500); // Attends 2.5 secondes avant de lancer l'animation sur le conteneur
     });
-
-    */
-
-   // Fonction pour l'animation de changement de page au clic sur le bouton
-enterButton.addEventListener('click', () => {
-    enterButton.classList.add('animate__animated', 'animate__bounceOut'); // Ajoute l'animation de changement de page
-    setTimeout(() => {
-        container.classList.add('animate__animated', 'animate__fadeOut'); // Ajoute l'animation de changement de page sur le conteneur
-        setTimeout(() => {
-            window.location.href = 'acceuil.html'; // Redirige vers la page d'accueil après la fin de l'animation
-        }, 2000); // Attends 2 secondes avant de rediriger
-    }, 2500); // Attends 2.5 secondes avant de lancer l'animation sur le conteneur
-});
-
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
