@@ -23,7 +23,7 @@ img {
     position: absolute;
     top: calc(60% - 128px); /* 80% moins la moitié de la hauteur du bouton */
     left: 50%; /* Position horizontale initiale au centre */
-    transform: translateX(-50%);
+    /*transform: translateX(-50%);*/
     cursor: pointer; /* Curseur de souris au survol */
     transition: width 0.3s ease; /* Transition fluide pour l'effet de survol */
 }
