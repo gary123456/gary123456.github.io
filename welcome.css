@@ -21,15 +21,15 @@ img {
 
 .enter-button {
     position: absolute;
-    top: 50%; /* Position verticale initiale au centre */
-    left: 50%; /* Position horizontale initiale au centre */
+    top: 58%; /* Position verticale initiale au centre */
+    left: 40%; /* Position horizontale initiale au centre */
     /*transform: translate(-50%, -50%);*/
     cursor: pointer; /* Curseur de souris au survol */
     transition: all 0.3s ease-in-out; /* Transition fluide pour l'effet de survol */
 }
 
 .enter-button img {
-    width: 20vw; /* Largeur souhaitée du bouton en fonction de la largeur de l'écran */
+    width: 15vw; /* Largeur souhaitée du bouton en fonction de la largeur de l'écran */
     height: auto; /* Hauteur automatique pour conserver les proportions */
 }
 
