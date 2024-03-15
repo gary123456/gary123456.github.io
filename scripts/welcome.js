@@ -23,6 +23,6 @@ enterButton.addEventListener('click', () => {
         // Redirige vers la page d'accueil après la fin de l'animation sur le conteneur
         setTimeout(() => {
             window.location.href = 'accueil.html';
-        }, 2000); // Attends 2 secondes (durée de l'animation fadeOut) avant de rediriger
-    }, 500); // Commence l'animation de fadeOut sur le conteneur légèrement après l'animation du bouton
+        }, 9000); // Attends 2 secondes (durée de l'animation fadeOut) avant de rediriger
+    }, 4000); // Commence l'animation de fadeOut sur le conteneur légèrement après l'animation du bouton
 });
