@@ -3,12 +3,12 @@ const enterButton = document.getElementById('enter-button');
 
     // Fonction pour l'animation au survol du bouton
     enterButton.addEventListener('mouseenter', () => {
-        enterButton.style.transform = 'scale(1.1)'; // Augmente légèrement la taille au survol
+        enterButton.classList.add('animate__animated', 'animate__heartBeat'); // Augmente légèrement la taille au survol
     });
 
     // Fonction pour la taille normale lorsque le survol se termine
     enterButton.addEventListener('mouseleave', () => {
-        enterButton.style.transform = 'scale(1)'; // Redevient à la taille normale
+        enterButton.classList.remove('animate__animated', 'animate__heartBeat'); // Redevient à la taille normale
     });
 
     // Fonction pour l'animation de changement de page au clic sur le bouton
